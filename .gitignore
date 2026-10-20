@@ -1,0 +1,11 @@
+/bin/
+/dist/
+/test-output/
+/user-data/
+__pycache__/
+*.pyc
+*.log
+*.error.txt
+*.partial/
+.vs/
+
