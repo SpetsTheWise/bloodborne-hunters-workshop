@@ -1,0 +1,30 @@
+name: Report a bug
+description: Describe a reproducible Workshop problem.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Workshop version
+      placeholder: 0.2.0
+    validations:
+      required: true
+  - type: input
+    id: port
+    attributes:
+      label: Native port version and executable SHA-256
+      description: The exact port build matters. A folder name can differ from the installed version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result, and actual result
+      description: Include item/effect IDs and whether you were hosting, loading, or at a stack limit.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Relevant error or activity log excerpt
+      description: Remove your Windows username and private paths. Do not upload saves, game files or personal data.
+
